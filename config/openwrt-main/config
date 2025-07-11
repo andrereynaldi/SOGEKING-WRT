@@ -8,7 +8,7 @@ CONFIG_HOST_OS_LINUX=y
 # CONFIG_HOST_OS_MACOS is not set
 # CONFIG_TARGET_airoha is not set
 # CONFIG_TARGET_d1 is not set
-# CONFIG_TARGET_sunxi is not set
+CONFIG_TARGET_sunxi=y
 # CONFIG_TARGET_apm821xx is not set
 CONFIG_TARGET_armsr=y
 # CONFIG_TARGET_ath79 is not set
@@ -48,7 +48,7 @@ CONFIG_TARGET_armsr=y
 # CONFIG_TARGET_omap is not set
 # CONFIG_TARGET_uml is not set
 # CONFIG_TARGET_zynq is not set
-# CONFIG_TARGET_x86 is not set
+CONFIG_TARGET_x86=y
 # CONFIG_TARGET_armsr_armv7 is not set
 CONFIG_TARGET_armsr_armv8=y
 # CONFIG_TARGET_MULTI_PROFILE is not set
@@ -172,8 +172,8 @@ CONFIG_TARGET_SERIAL="ttyS0"
 #
 # Image Options
 #
-CONFIG_TARGET_KERNEL_PARTSIZE=128
-CONFIG_TARGET_ROOTFS_PARTSIZE=512
+CONFIG_TARGET_KERNEL_PARTSIZE=256
+CONFIG_TARGET_ROOTFS_PARTSIZE=2048
 # CONFIG_TARGET_ROOTFS_PERSIST_VAR is not set
 # end of Target Images
 
